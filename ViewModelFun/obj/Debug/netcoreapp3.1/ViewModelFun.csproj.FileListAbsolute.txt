@@ -34,3 +34,6 @@
 /Users/garynewmeyer/Desktop/CodingDojo/c_sharp/AspNetCoreMvcII/ViewModelFun/obj/Debug/netcoreapp3.1/ViewModelFun.pdb
 /Users/garynewmeyer/Desktop/CodingDojo/c_sharp/AspNetCoreMvcII/ViewModelFun/obj/Debug/netcoreapp3.1/ViewModelFun.genruntimeconfig.cache
 /Users/garynewmeyer/Desktop/CodingDojo/c_sharp/AspNetCoreMvcII/ViewModelFun/obj/Debug/netcoreapp3.1/ViewModelFun.csproj.CopyComplete
+/Users/garynewmeyer/Desktop/CodingDojo/c_sharp/AspNetCoreMvcII/ViewModelFun/obj/Debug/netcoreapp3.1/Razor/Views/Home/Numbers.cshtml.g.cs
+/Users/garynewmeyer/Desktop/CodingDojo/c_sharp/AspNetCoreMvcII/ViewModelFun/obj/Debug/netcoreapp3.1/Razor/Views/Home/User.cshtml.g.cs
+/Users/garynewmeyer/Desktop/CodingDojo/c_sharp/AspNetCoreMvcII/ViewModelFun/obj/Debug/netcoreapp3.1/Razor/Views/Home/Users.cshtml.g.cs

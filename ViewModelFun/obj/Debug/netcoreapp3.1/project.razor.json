@@ -20521,8 +20521,18 @@
   "RootNamespace": "ViewModelFun",
   "Documents": [
     {
+      "FilePath": "/Users/garynewmeyer/Desktop/CodingDojo/c_sharp/AspNetCoreMvcII/ViewModelFun/Views/Home/Users.cshtml",
+      "TargetPath": "Views\\Home\\Users.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/garynewmeyer/Desktop/CodingDojo/c_sharp/AspNetCoreMvcII/ViewModelFun/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/garynewmeyer/Desktop/CodingDojo/c_sharp/AspNetCoreMvcII/ViewModelFun/Views/Home/User.cshtml",
+      "TargetPath": "Views\\Home\\User.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20553,6 +20563,11 @@
     {
       "FilePath": "/Users/garynewmeyer/Desktop/CodingDojo/c_sharp/AspNetCoreMvcII/ViewModelFun/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/garynewmeyer/Desktop/CodingDojo/c_sharp/AspNetCoreMvcII/ViewModelFun/Views/Home/Numbers.cshtml",
+      "TargetPath": "Views\\Home\\Numbers.cshtml",
       "FileKind": "mvc"
     }
   ],
