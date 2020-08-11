@@ -1,0 +1,38 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <h3>Enter your information:</h3>
+<div class="form border border-primary p-1 shadow-lg p-3 mb-5 rounded">
+    <form asp-action="Submit" asp-controller="Home" method="POST">
+        <div class="form-group">
+            <label for="FirstName">First Name: </label>
+            <input class=”form-control” asp-for="FirstName">
+            <small id="errors" class="form-text text-danger"><span asp-validation-for="FirstName"></span></small>
+        </div>
+        <div class="form-group">
+            <label for="LastName">Last Name: </label>
+            <input class=”form-control” asp-for="LastName">
+            <small id="errors" class="form-text text-danger"><span asp-validation-for="LastName"></span></small>
+        </div>
+        <div class="form-group">
+            <label for="Age">Age: </label>
+            <input class=”form-control” asp-for="Age">
+            <small id="errors" class="form-text text-danger"><span asp-validation-for="Age"></span></small>
+        </div>
+        <div class="form-group">
+            <label for="Email">Email: </label>
+            <input class=”form-control” asp-for="Email">
+            <small id="errors" class="form-text text-danger"><span asp-validation-for="Email"></span></small>
+        </div>
+        <div class="form-group">
+            <label for="Password">Password: </label>
+            <input class=”form-control” asp-for="Password">
+            <small id="errors" class="form-text text-danger"><span asp-validation-for="Password"></span></small>
+        </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+</div>
+</div>
