@@ -1,0 +1,28 @@
+﻿@model SurveyResults
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <h3>Dojo Survey</h3>
+    <div class="form">
+        <form action="/FormPost" method="POST">
+        Name: <input type="text" name="Name"/>
+        <select name="Location" id="">
+            <option disabled selected value="">select location</option>
+            <option value="SanJose">San Jose</option>
+            <option value="Dallas">Dallas</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Seattle">Seattle</option>
+        </select>
+        <select name="Language" id="">
+            <option disabled selected value="">select language</option>
+            <option value="C#">C#</option>
+            <option value="Python">Python</option>
+            <option value="SQL">SQL</option>
+            <option value="GO">GO</option>
+        </select>
+        <textarea name="Comment" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
