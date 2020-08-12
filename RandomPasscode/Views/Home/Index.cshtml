@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container text-center">
+    <h3 class="text-center pt-5">Random Passcode</h3>
+    <p class="text-center">Passcode #@ViewBag.passCount</p>
+    <h1 class="textcenter border border-primary p-1 shadow-lg p-3 my-5 rounded">@ViewBag.RandoPass</h1>
+    <form asp-action="Generate" asp-controller="Home" method="post">
+        <button class="btn btn-primary .btn-lg shadow-lg" type="submit">Generate</button>
+    </form>
+    <form asp-action="Reset" asp-controller="Home" method="post">
+        <button class="btn btn-danger .btn-lg shadow-lg mt-3" type="submit">Reset</button>
+    </form>
+</div>
