@@ -1,0 +1,43 @@
+﻿@model SurveyResults
+
+<div class="container">
+    <h3 class="text-center">Dojo Survey</h3>
+
+<div class="form border border-primary p-1 shadow-lg p-3 mb-5 rounded">
+    <form asp-action="Submit" asp-controller="Home" method="POST">
+        <div class="form-group">
+            <label for="Name">Name: </label>
+            <input class=”form-control” asp-for="Name">
+            <small id="errors" class="form-text text-danger"><span asp-validation-for="Name"></span></small>
+        </div>
+        <div class="form-group">
+        <label for="Location">Location: </label>
+        <select asp-for="Location" id="">
+            <option disabled selected value="">select location</option>
+            <option value="SanJose">San Jose</option>
+            <option value="Dallas">Dallas</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Seattle">Seattle</option>
+        </select>
+        <small id="errors" class="form-text text-danger"><span asp-validation-for="Location"></span></small>
+        </div>
+        <div class="form-group">
+        <label for="Language">Language: </label>
+        <select asp-for="Language" id="">
+            <option disabled selected value="">select language</option>
+            <option value="C#">C#</option>
+            <option value="Python">Python</option>
+            <option value="SQL">SQL</option>
+            <option value="GO">GO</option>
+        </select>
+        <small id="errors" class="form-text text-danger"><span asp-validation-for="Language"></span></small>
+        </div>
+        <div class="form-group">
+        <label for="Comment"></label>
+        <textarea asp-for="Comment" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+        <small id="errors" class="form-text text-danger"><span asp-validation-for="Comment"></span></small>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+</div>
+</div>
