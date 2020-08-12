@@ -21,7 +21,11 @@ namespace DojoSurveyIII.Controllers
         [HttpPost("submit")]
         public IActionResult Submit(SurveyResults newSurveyResult)
         {
-            return View("result", newSurveyResult);
+            if(ModelState.IsValid)
+            {
+                return View("Success");
+            }
+            return View("Index", newSurveyResult);
         }
 //
         [HttpGet("result")]
