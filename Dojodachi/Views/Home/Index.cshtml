@@ -1,0 +1,47 @@
+﻿@model Dog
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container text-center">
+    <p class="d-inline-flex mr-5 mt-5">Fullness: @ViewBag.Fullness</p>
+    <p class="d-inline-flex mr-5">Happiness: @ViewBag.Happiness</p>
+    <p class="d-inline-flex mr-5">Meals: @ViewBag.Meals</p>
+    <p class="d-inline-flex mr-5">Energy: @ViewBag.Energy</p>
+    <hr class="border-primary">
+
+    @{
+    if (ViewBag.Energy > 100 && ViewBag.Fullness > 100 && ViewBag.Happiness > 100)
+    {
+        <h3>Woof woof! You've won the game!</h3>
+        <partial name="_ButtonPartial"/>
+        <hr class="border-primary">
+    }
+    else if (ViewBag.Fullness == 0 || ViewBag.Happiness == 0)
+    {
+        <partial name="_ButtonPartial"/>
+        <h3>Your doggo has ran away.</h3>
+        <hr class="border-primary">
+    }
+
+    else
+    {
+        <p class="text-center">@ViewBag.Message</p>
+        <hr class="border-primary">
+        <form asp-action="Feed" asp-controller="Home" method="post" class="d-inline-flex mr-5">
+            <button class="btn btn-warning btn-lg shadow-lg" type="submit">Feed</button>
+        </form>
+
+        <form asp-action="Play" asp-controller="Home" method="post" class="d-inline-flex mr-5">
+            <button class="btn btn-success btn-lg shadow-lg" type="submit">Play</button>
+        </form>
+
+        <form asp-action="Work" asp-controller="Home" method="post" class="d-inline-flex mr-5">
+            <button class="btn btn-danger btn-lg shadow-lg" type="submit">Work</button>
+        </form>
+
+        <form asp-action="Sleep" asp-controller="Home" method="post" class="d-inline-flex mr-5">
+            <button class="btn btn-dark btn-lg shadow-lg" type="submit">Sleep</button>
+        </form>
+    }}
+</div>
